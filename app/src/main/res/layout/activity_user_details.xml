@@ -1,9 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".UserDetailsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="10dp"
+        android:elevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/textNomeDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome : "
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/nomeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/textNomeDetails"
+                android:text="nome"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textEmailDetails"
+                android:layout_below="@+id/textNomeDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="E-mail : "
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/emailDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:layout_below="@id/nomeDetails"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/textEmailDetails"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/textPhoneDetails"
+                android:layout_below="@+id/textEmailDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="número : "
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/phoneDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:layout_below="@id/emailDetails"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/textPhoneDetails"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/textDataDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data : "
+                android:layout_below="@+id/textPhoneDetails"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/dataDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:layout_below="@id/textPhoneDetails"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/textDataDetails"
+                android:textColor="@color/black"
+                />
+
+
+            <TextView
+                android:id="@+id/textidDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID : "
+                android:layout_below="@+id/textDataDetails"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/idDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:layout_below="@id/dataDetails"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/textDataDetails"
+                android:textColor="@color/black"
+                />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonDetailsDelete"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="Deletar"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/buttonDetailsUpdate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:text="Editar"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buttonDetailsDelete"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
