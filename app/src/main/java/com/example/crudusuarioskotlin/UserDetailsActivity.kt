@@ -41,7 +41,7 @@ class UserDetailsActivity : AppCompatActivity()
         emailDetails.text = intent.getStringExtra("email")
         phoneDetails.text = intent.getStringExtra("telefone")
         dataDetails.text = intent.getStringExtra("data")
-        idDetails.text = intent.getStringExtra("id")
+
     }
 
     private fun openUpdateDialog(id: String)

@@ -113,28 +113,6 @@
                 />
 
 
-            <TextView
-                android:id="@+id/textidDetails"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ID : "
-                android:layout_below="@+id/textDataDetails"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/black"
-                />
-
-            <TextView
-                android:id="@+id/idDetails"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ID"
-                android:layout_below="@id/dataDetails"
-                android:layout_marginTop="10dp"
-                android:layout_toRightOf="@+id/textDataDetails"
-                android:textColor="@color/black"
-                />
-
 
 
         </RelativeLayout>
